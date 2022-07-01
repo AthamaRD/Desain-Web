@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet');
+
+* {
+    font-family: 'Cardo', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.body{
+    background-color: black;
+}
+
+.header .logo img{
+    height: 2rem;
+    align-items: left;
+}
+
+.header .navbar a{
+    margin:0 1rem;
+    font-size: 1.6rem;
+    color:#fff;
+}
+
+.header a:nth-child(2) {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin: 0px;
+    border-radius: 25px;
+    background: rgb(184, 129, 9);
+    transition: .5s all;
+}
+
+.main .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.container .item {
+    width: 50%;
+    height: 100%;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.card {
+    height: 100%;
+    background-color: rgb(28, 27, 27);
+    padding: 20px;
+    backdrop-filter: blur(5px);
+    text-align: center;
+    font-size: 17px;
+    color: #fff;
+    border-radius: 20px;
+}
+
+.card img{
+    height: 50%;
+}
+
+.img-model1 .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.wrapper .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px;
+}
+
+.container-history {
+    padding: 20px;
+    position: relative;
+}
+
+.container-history .card {
+    padding: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container-history img {
+    width: 500px;
+    border-radius: 20px;
+}
+
+.container-history img:hover {
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+.container-history .card h3,
+.container-history .card p {
+    background: transparent;
+}
+
+@media (max-width:768px) {
+    .container-history img {
+        width: 100%;
+    }
+}
